@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(216, 216, 216);
+}
+
+body{
+    background-image: url(../Images/backgroundError.png);
+    background-size: cover;
+}
+
+.content{
+    margin: auto;
+    margin-top: 11em;
+    width: 50%;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Bangers';
+    letter-spacing: .2em;
+    font-size: 3em;
+    margin-bottom: .5em;
+    margin-top: 1em;
+    color: rgb(131, 0, 0);
+}
+
+p{
+    font-family: 'Bebas Neue';
+    font-size: 2em;
+    line-height: 2.5em;
+}
+
+.fa-solid{
+    margin-left: .2em;
+}
+
+a{
+    color: black;
+    font-family: 'Bangers';
+    font-size: 1.3em;
+    letter-spacing: .2em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    padding: .5em 1em;
+    background-color: rgb(216, 216, 216);
+    border-radius: .5em;
+}
+
+a:hover{
+    background-color: rgb(156, 156, 156);
+}
+
+.fa-angles-left{
+    color: black;
+    margin-right: 2em;
+    text-shadow: none;
+}

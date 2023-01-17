@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44)), url(../Images/background..jpg);
+}
+
+.back{
+    background-color:(rgba(0, 0, 0, 0.44));
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contentCard{
+    display: flex;
+    margin-top: 1em;
+}
+
+.contentText{
+    margin-right: 1em;
+    width: 20em;
+}
+
+.card{
+    height: 20em;
+    max-width: 40em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 1.2em;
+    padding: 2em;
+    border-radius: .8em;
+    background-color: rgb(5, 5, 5);
+}
+
+.card i{
+    margin: auto;
+}
+
+.name{
+    font-family: 'Bangers';
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: .4em;
+    color: rgb(216, 216, 216);
+    text-shadow: rgb(198, 0, 0) -.08em .08em .02em;
+    background-color: rgba(255, 255, 255, 0.034);
+    margin: auto;
+}
+
+p{
+    font-family: sans-serif;
+    line-height: 2em;
+    font-size: .99em;
+    color: rgb(127, 118, 118);
+    margin-left: 1.5em;
+    margin-top: .3em;
+}
+
+h1{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: .5em;
+    margin-top: .8em;
+    padding: .1em;
+    font-family: 'Bebas Neue';
+    font-size: 2.5em;
+    background-color: rgb(172, 1, 1);
+    border-radius: .5em;
+    letter-spacing: .05em;
+    color: rgb(216, 216, 216);
+    text-shadow: black .1em .1em .01em;
+}
+
+.image{
+    border: 8px double grey;
+}
+
+.delete{
+   background-color: transparent;
+   margin-left: 35em;
+   margin-bottom: 1em;
+}
+
+.fa-trash-can{
+    color: rgb(216, 216, 216);
+    font-size: 1.8em; 
+}
+
+.fa-trash-can:hover{
+    color: rgb(216, 216, 216);
+    text-shadow: rgb(198, 0, 0) -.08em .08em .02em;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+a{
+    color: rgb(216, 216, 216);
+    font-family: 'Bangers';
+    font-size: 1.3em;
+    letter-spacing: .2em;
+    display: inline-block;
+    margin-left: 31.7em;
+    text-decoration: none;
+    padding: .5em 1em;
+    background-color: black;
+    border-radius: .5em;
+}
+
+a:hover{
+    color: rgb(210, 0, 0);
+    background-color: rgb(9, 9, 9);
+    cursor: pointer;
+}
+
+.fa-angles-left{
+    margin-right: 2em;
+    text-shadow: none;
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1400px){
+    a{
+        text-align: center;
+        margin-left: 30%;
+        display: block;
+        width: 33%;
+        margin: auto;
+    }
+
+    .content{
+        display: inline;
+    }
+
+    .card{
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 2em;
+    }
+
+    .delete{
+        margin-left: 93%;
+    }
+}
+

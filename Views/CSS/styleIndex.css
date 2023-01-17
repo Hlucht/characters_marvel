@@ -1,0 +1,182 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(216, 216, 216);
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44)), url(../Images/background..jpg);
+}
+
+.content{
+    width: 60%;
+    margin: auto;
+    padding: 2.1em;
+    border-radius: 3em;
+}
+
+form{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "col-1 col-2"
+    "buttonRegister buttonList";
+}
+
+.col-1{
+    grid-area: col-1;
+    background-color: rgba(0, 0, 0, 0.964);
+    border: 1px solid rgb(216, 216, 216);
+    padding: 2em;
+    margin: .5em;
+    border-radius: 3em;
+}
+
+.col-2{
+    grid-area: col-2;
+    background-color: rgba(0, 0, 0, 0.964);
+    border: 1px solid rgb(216, 216, 216);
+    padding: 2em;
+    margin: .5em;
+    border-radius: 3em;
+}
+
+.col-1 input{
+    width: 22.5em;
+    margin-bottom: 3em;
+}
+
+.content h1{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    padding: .1em;
+    font-family: 'Bebas Neue';
+    font-size: 2.5em;
+    background-color: rgb(172, 1, 1);
+    border-radius: .5em;
+    letter-spacing: .05em;
+    text-shadow: black .1em .1em .01em;
+}
+
+.categories{
+    width: 100%;
+    margin: auto;
+    margin-top: 1em;
+    font-size: .9em;
+}
+
+.categories label:hover{
+    color:rgb(193, 0, 0);
+}
+
+.check{
+    margin-left: 1em;
+    margin-bottom: .2em;
+    cursor: pointer;
+}
+
+label{
+    display: block;
+    font-family: 'Bebas Neue';
+    font-size: 1.5em;
+    letter-spacing: .08em;
+}
+
+input, textarea{
+    color: rgb(55, 55, 55);
+    padding: .5em;
+    border-radius: .5em;
+    border: 1px solid black;
+}
+
+input:hover, textarea:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+.buttonRegister{
+    grid-area: buttonRegister;
+}
+
+.buttonList{
+    grid-area: buttonList;
+}
+
+button{
+    background-color: rgb(193, 0, 0);
+    padding: .3em;
+    margin: auto;
+    margin-top: .5em;
+    border-radius: .5em;
+    border: 1px solid rgb(193, 0, 0);
+    width: 13em;
+    font-family: 'Bebas Neue';
+    font-size: 1.5em;
+    letter-spacing: .04em;
+    text-shadow: black .1em .1em .01em;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(255, 0, 0);
+    transform: scale(1.02);
+}
+
+input[type='file']{
+    display: none;
+}
+
+.photo{
+    display: block;
+    background-color: rgb(216, 216, 216);
+    width: 6em;
+    padding: .2em;
+    border-radius: .5em;
+    font-family:'Bebas Neue';
+    color: rgb(193, 0, 0);
+    cursor: pointer;
+}
+
+.photo:hover{
+    transform: scale(1.02);
+    background-color: rgb(226, 226, 226);
+}
+
+.fa-regular{
+    margin-left: .2em;
+    color: rgb(193, 0, 0);
+}
+
+input::placeholder{
+    font-family: monospace;
+    color: rgb(69, 69, 69);
+}
+
+
+@media screen and (max-width: 1280px){
+    form{
+        display: block;
+    }
+
+    .col-1, .col-2{
+        margin: auto;
+        margin-bottom: 1em;
+        width: 90%;
+    }
+
+    .col-1 input{
+        width: 80%;
+    }
+
+    textarea{
+        width: 80%;
+    }
+    
+    .content h1{
+        width: 100%;
+    }
+}
